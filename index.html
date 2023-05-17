@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  
+    <div class="container">
+     
+      <div class="row">
+       
+        <div class="col-md-6 mx-auto mt-5">
+            <h1 style="padding-bottom: 20px;">Calculator</h1>
+          <div class="calculator">
+            <input class="calculator-screen" id="calculation-input" type="text" placeholder="0" disabled />
+            <div class="calculator-keys">
+            
+             
+                <button type="button" id="ac"  class="all-clear" value="all-clear">AC</button>
+                <button type="button" id="ac1" class="operator" value="+/-"> +/-</button>
+                <button type="button" id="ac2" class="operator" value="%">% </button>
+              <button type="button" id="orange3" class="operator" value="/">&divide;</button>
+              <button type="button" value="7">7</button>
+              <button type="button" value="8">8</button>
+              <button type="button" value="9">9</button>
+              <button type="button" id="orange1" class="operator" value="*">&times;</button>
+              <button type="button" value="4">4</button>
+              <button type="button" value="5">5</button>
+              <button type="button" value="6">6</button>
+              <button type="button" id="orange2" class="operator" value="-">-</button>
+              <button type="button" value="1">1</button>
+              <button type="button" value="2">2</button>
+              <button type="button" value="3">3</button>
+              <button type="button" id="orange" class="operator"  value="+">+</button>
+              <button type="button" value="0">0</button>
+              <button type="button" class="decimal" value=".">.</button>
+             
+              <button type="button" class="equal" value="=">=</button>
+            </div>
+            <div class="calculation_save">
+                <h6>calculation name</h6>
+       <input  class="result" id="my-input" placeholder="Enter Name" / >
+       <button class="save_button" id="save-button" style="background-color: rgb(62,75,185);">Save</button>
+    </div>
+          </div>
+           
+        </div>
+       
+        <div class="calculator-history">
+            <h1>Your Calculations</h1>
+          <!-- <ul></ul> -->
+          <table id="history-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Calculation</th>
+                <th>Result</th>
+                <th></th>
+                <th></th> <!-- delete button column -->
+
+              </tr>
+            </thead>
+            <tbody>
+              <!-- table rows will be dynamically added here -->
+            </tbody>
+          </table>
+          
+         
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
